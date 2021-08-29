@@ -32,7 +32,7 @@ function checkInputs() {
   }
 
   if (passwordValue === "") {
-    setErrorFor(password, "password must be at least 6 characters");
+    setErrorFor(password, "Password must be at least 6 characters");
   } else {
     setSuccessFor(password);
   }
@@ -59,7 +59,7 @@ function setSuccessFor(input) {
 }
 
 function isEmail(email) {
-  return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+  return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
     email
   );
 }
